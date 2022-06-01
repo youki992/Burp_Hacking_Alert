@@ -1,0 +1,19 @@
+{
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.5.1",
+            "memory": 1024,
+            "maxDuration": 10
+        }
+    },
+    "routes": [
+        {
+            "src": "/(\\w*)\\.(?:css)",
+            "dest": "/css/style.css"
+        },
+        { 
+            "src": "/(.*)",
+            "dest": "/api/index.php" 
+        }
+    ]
+}

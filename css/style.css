@@ -1,0 +1,92 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: rgb(255 255 255 / 50%);
+}
+
+a {
+  color: #4caf50;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a, a:focus, button, button:focus {
+    outline: 0;
+}
+
+a:hover {
+    color: #4caf50;
+  text-decoration: none;
+    }
+
+::after, ::before {
+  border: 0px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  background: rgb(255 255 255 / 78%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.card-header:first-child{
+    border: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cards {
+    background-image: none;
+    background-color: #5cb85c;
+    background-repeat: repeat;
+}
+.card {
+    position: relative;
+    border-radius: 10px;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    border: 0;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fafafaa3;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/**页头样式**/
+.header {
+  border-bottom:1px solid #ffffff00!important;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 55%);
+}
+/**页脚样式**/
+.footer {
+    text-align: center;
+    padding: 10px;
+  width: 100%;
+  color: #8b6cc1f7;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 55%);
+  
+  bottom: 0;
+}
+
+/**背景图片**/
+#bg {
+  content: " ";
+  background: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://server.nange.cn/static/bg/04.JPG);
+  }
